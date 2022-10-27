@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Game</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="./styles/reset200802.css">
+    <link rel="stylesheet" href="./styles/slick.css">
+    <link rel="stylesheet" href="./styles/slick-theme.css">
+    <link rel="stylesheet" href="./styles/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./build/bundle.css">
+    <script type="module" src="./build/bundle.js"></script>
+</head>
+
+<body>
+    <div class="game">
+        <div class="game__path"></div>
+        <img class="game__ladder" src="./images/ladder.png" alt="ladder">
+        <img class="game__flower" src="./images/flower.png" alt="flower">
+        <img class="game__end-point" src="./images/end-point.png" alt="point">
+        <div class="game__girl">
+            <span id="mygirl"></span>
+        </div>
+        <span class="game__first-course first-course">
+            первый курс</span>
+        <span class="game__school-graduation school-graduation">
+            выпускной</span>
+        <div class="game__navigation game-navigation">
+            <div class="game-navigation-slider">
+                <div class="slider">
+                    <div class="slider__item">
+                        <button class="slider-item-add"></button>
+                        <img class="slider-item-man" src="./images/whiteman.png" alt="whiteman">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider-item-man" src="./images/whiteman.png" alt="whiteman">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider-item-man" src="./images/whiteman.png" alt="whiteman">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider-item-man" src="./images/whiteman.png" alt="whiteman">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider-item-man" src="./images/whiteman.png" alt="whiteman">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider-item-man" src="./images/whiteman.png" alt="whiteman">
+                    </div>
+                    <div class="slider__item"></div>
+                    <div class="slider__item"></div>
+                    <div class="slider__item"></div>
+                    <div class="slider__item"></div>
+                    <div class="slider__item"></div>
+                </div>
+            </div>
+            <button class="game-navigation__chat">
+            </button>
+            <button class="game-navigation__univer">
+                В УНИВЕР
+            </button>
+            <button class="game-navigation__mail"></button>
+            <button id="modal" class="game-navigation__raiting"></button>
+        </div>
+    </div>
+
+    <div id="dialog" class="dialog">
+        <div class="dialog__content dialog-content">
+            <div class="dialog-content__header"></div>
+            <div class="dialog-content__table dialog-content-table">
+                <ul class="dialog-content-table-header">
+                    <li class="dialog-content-table-header__place">Место</li>
+                    <li class="dialog-content-table-header__checkbox"></li>
+                    <li class="dialog-content-table-header__fio">Имя Фамилия</li>
+                    <li class="dialog-content-table-header__experience">Опыт</li>
+                </ul>
+                <ul class="dialog-content-table-list" id="items"></ul>
+            </div>
+            <button class="dialog-content-close"></button>
+        </div>
+    </div>
+    <div class="pageloader"></div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./scripts/jquery.mCustomScrollbar.js"></script>
+</body>
+</html>
